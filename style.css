@@ -1,0 +1,69 @@
+:root {
+    --blackColor: #111;
+    --whiteColor: #EEE;
+
+	--infiniteRadius: 9999px;
+	--radius: 7px;
+
+	--shadow: #000 0px 20px 30px -10px;
+}
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	color: var(--textColor);
+	scroll-behavior: smooth;
+	/* scroll-snap-type: both mandatory; */
+
+	font-family: "metrisch", Arial, Helvetica, sans-serif;
+	scrollbar-color: var(--whiteColor) var(--extraLightGreyColor);
+	scrollbar-width: thin;
+}
+a:not(:hover) {
+	text-decoration: none;
+}
+.d-none {
+	display: none;
+}
+.game {
+	height: 100vh;
+	overflow: hidden;
+	/* cursor: none; */
+	background: var(--blackColor);
+}
+.game .cursor {
+	display: inline-block;
+	position: fixed;
+	transition: .2s;
+
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 4.5em;
+	height: 4.5em;
+	padding: 7px 15px;
+	border-radius: var(--infiniteRadius);
+
+	color: var(--whiteColor);
+}
+.leave {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+
+	padding: 15px;
+	border-radius: var(--radius);
+	cursor: pointer;
+
+	color: var(--blackColor);
+	background: var(--whiteColor);
+}
+
+
+
+
+
+
